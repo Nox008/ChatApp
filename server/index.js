@@ -13,7 +13,7 @@ const io = new Server(server, {
     },
 });
 
-mongoose.connect('mongodb://127.0.0.1:27017/chatapp');
+mongoose.connect('mongodb+srv://articadmin:artic123@articglow.1hqbc.mongodb.net');
 
 const userSchema = new mongoose.Schema({
     username: String,
@@ -23,6 +23,10 @@ const User = mongoose.model('User', userSchema);
 
 app.use(cors());
 app.use(express.json());
+
+app.get('/',(req,res)=>{
+    res.send("API Working")
+})
 
 io.on('connection', (socket) => {
     console.log('A user connected:', socket.id);
