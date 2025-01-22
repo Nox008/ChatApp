@@ -1,0 +1,114 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #141414, #212121);
+}
+
+.login-box {
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 300px;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fefefe;
+}
+
+.login-input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: solid 1px white;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+    background-color: #1f1f1f;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ff4655;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #d73642;
+}
+
+/* Chat styles */
+.chat-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-box {
+    border: 1px solid #444;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #1f1f1f;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.chat-input {
+    width: 87%;
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.chat-button {
+    padding: 10px 20px;
+    background-color: #ff4655;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.chat-button:hover {
+    background-color: #d73642;
+}
+.notification {
+    color: #ff4655;
+    font-style: italic;
+    margin: 5px 0;
+}
+
